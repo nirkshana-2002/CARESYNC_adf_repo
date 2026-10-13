@@ -48,26 +48,7 @@
 						"value": "@activity('Read_src_tables').output.value",
 						"type": "Expression"
 					},
-					"isSequential": false,
-					"activities": [
-						{
-							"name": "Set variable1",
-							"type": "SetVariable",
-							"dependsOn": [],
-							"policy": {
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"variableName": "TEST",
-								"value": {
-									"value": "@item().table_id",
-									"type": "Expression"
-								}
-							}
-						}
-					]
+					"isSequential": false
 				}
 			}
 		],
@@ -80,6 +61,9 @@
 		"variables": {
 			"TEST": {
 				"type": "String"
+			},
+			"test": {
+				"type": "Integer"
 			}
 		},
 		"annotations": []
